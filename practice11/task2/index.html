@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Калькулятор стоимости доставки</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Калькулятор стоимости доставки</h1>
+
+    <form class="productForm" novalidate>
+        <p>
+            Название товара:
+            <input class="productName" type="text">
+        </p>
+
+        <p>
+            Вес товара (кг):
+            <input class="productWeight" type="number">
+        </p>
+
+        <p>
+            Расстояние доставки (км):
+            <input class="productDistance" type="number">
+        </p>
+
+        <button type="submit">Добавить товар</button>
+    </form>
+
+    <p class="error"></p>
+
+    <table class="product-table">
+        <thead>
+            <tr>
+                <th>Название товара</th>
+                <th>Вес (кг)</th>
+                <th>Расстояние (км)</th>
+                <th>Стоимость доставки</th>
+            </tr>
+        </thead>
+            <tbody class="productList">
+        </tbody>
+    </table>
+</body>
+<script src="index.js"></script>
+</html>

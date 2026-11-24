@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма опроса</title>
+</head>
+<body>
+    <h1>Форма опроса</h1>
+
+    <form class="surveyForm" novalidate>
+        <p>
+            Имя пользователя:
+            <input class="userName" type="text">
+            <span class="nameError"></span>
+        </p>
+
+        <p>
+            Email:
+            <input class="userEmail" type="email">
+            <span class="emailError"></span>
+            
+        </p>
+
+        <p>
+            Пол:
+            <label>
+                <input type="radio" name="gender" value="Мужской">
+                Мужской
+            </label>
+            <label>
+                <input type="radio" name="gender" value="Женский">
+                Женский
+            </label>
+        </p>
+
+        <p>
+            Оценка сервиса:
+            <input class="rating" type="range" min="1" max="10" value="5">
+            <span class="ratingValue">5</span>
+        </p>
+
+        <p>Интересы пользователя:</p>
+
+        <label>
+            <input type="checkbox" name="interest" value="Спорт">
+            Спорт
+        </label>
+        <br>
+        <label>
+            <input type="checkbox" name="interest" value="Музыка">
+            Музыка
+        </label>
+        <br>
+        <label>
+            <input type="checkbox" name="interest" value="Путешествия">
+            Путешествия
+        </label>
+        <br>
+        <label>
+            <input type="checkbox" name="interest" value="Кино">
+            Кино
+        </label>
+
+        <p>Дополнительные комментарии:</p>
+        <textarea class="comments" rows="4" cols="30"></textarea>
+
+        <p>
+            <button class="submitBtn" type="submit">Отправить</button>
+        </p>
+    </form>
+
+    <div class="result"></div>
+</body>
+<script src="index.js"></script>
+</html>
